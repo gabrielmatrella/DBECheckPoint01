@@ -1,7 +1,7 @@
-#DBECheckPoint01
+# DBECheckPoint01
 ## Funcionalidades
 
-####Rotas sem autentição
+#### Rotas sem autentição
 <ul>
     <li>
         <strong>[POST] /auth</strong> -> Recebe um usuário no body e quando valido, gera um accessToken, para ser utilizado no header Authorization de todas as rotas seguras.<br>
@@ -12,7 +12,7 @@
     </li>
 </ul>
 
-####Rotas protegidas
+#### Rotas protegidas
 
 <p>É necessário enviar nas requisições protegidas o header de Authorization contendo o seguinte valor: Bearer {accessToken}, o accessToken pode ser recuperado realizando o post das credenciais do exemplo no /auth.</p>
 <ul>
@@ -57,13 +57,13 @@
 
 ## Arquitetura
 Sistema com arquitetura rest, utilizando tokens JWT como meio de autentição em cima do ambiente Spring, sendo que as tecnologias utilizadas são: Spring Data, Spring Web, Spring Security, Spring Validation.
-##Como executar o projeto
+## Como executar o projeto
 1. Faça o clone do repositorio
 2. Abra o projeto no intellij ou sua ide de preferencia
 3. Baixe as dependencias do POM.xml
 4. Execute o projeto
 5. Utilize o usuário que já vem cadastrado por padrão para criar um token e posteriormente consumir as rotas seguras da api  -> email: "hospital-master@example.com", password: "1234"  
-##Integrantes
+## Integrantes
 ```bash
 Agatha Nayara  RM82585
 Gabriel Matrella RM80387
